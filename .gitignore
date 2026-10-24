@@ -1,0 +1,39 @@
+# 密钥与本地配置（绝不入库）
+.env
+*.key
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.mypy_cache/
+.pytest_cache/
+
+# 运行时数据
+backend/uploads/
+
+# 大体积语料与导入进度（README 提供获取与导入方式）
+data/lawrefbook/
+data/laws_full.jsonl
+data/.ingest_progress
+
+# 测试生成的临时文件
+data/test_contract.png
+data/test_contract.txt
+data/test_question.json
+data/test_q1.json
+data/test_q2.json
+data/eval_questions.jsonl
+
+# Node / 前端构建
+node_modules/
+dist/
+
+# 本地工具（免安装 Node 等）
+tools/
+
+# IDE / 系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
